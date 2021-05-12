@@ -13,7 +13,7 @@ RUN npm install
 # Copy app from local environment into the Docker image
 COPY . .
 
-RUN ionic init
+RUN ionic init "udagram-frontend"
 RUN ionic build
 
 ## Run
